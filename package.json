@@ -1,0 +1,18 @@
+{
+  "name": "testframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chromium": "npx playwright test --headed --project chromium --workers 1 history.spec.js",
+    "test:firefox": "npx playwright test --headed --project firefox --workers 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.11.24",
+    "allure-playwright": "^2.15.1"
+  }
+}
